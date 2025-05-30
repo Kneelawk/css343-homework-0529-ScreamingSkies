@@ -25,6 +25,7 @@ KTEST(fruit_factory_balance) {
         if (fruit->getName() == "Bananator") {
             bananatorCount++;
         }
+        delete fruit;
     }
 
     KASSERT_EQ(2, dragonFruitCount);

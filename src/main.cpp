@@ -70,6 +70,7 @@ int main() {
                 } else {
                     std::cout << "You killed " << fruit->getName() << ". You may now eat it." << std::endl;
                     remainingFruits--;
+                    delete fruit;
                     fruit = nullptr;
 
                     if (remainingFruits <= 0) {
